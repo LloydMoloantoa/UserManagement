@@ -1,0 +1,21 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Edit User</li>
+  </ol>
+</nav>
+
+{{#if alert}}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{alert}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+{{/if}}
+
+{{#each rows}}
+<form class="row g-3 needs-validation" method="POST" action="/edituseru/{{this.id}}" novalidate> 
+  {{> user-formu}}
+</form>
+{{/each}}
+ <form class="" method="POST" action="/usersview">
+    <button style="margin-top: 5px; width: 100%;" class="btn btn-primary" align="center" type="submit">Back</button>
+  </form>

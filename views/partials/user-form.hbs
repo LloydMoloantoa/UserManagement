@@ -1,0 +1,42 @@
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" value="{{this.name}}" placeholder="Name" name="name">
+    <label for="floatingInput">Name</label>
+  </div>
+</div>
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" value="{{this.category}}" placeholder="category"
+      name="category">
+    <label for="floatingInput">Category</label>
+  </div>
+</div>
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input type="number" class="form-control" id="floatingInput" value="{{this.price}}" placeholder="R0.00"
+      name="price">
+    <label for="floatingInput">Price</label>
+  </div>
+</div>
+<div class="col-6">
+  <div class="form-floating mb-3">
+  </div>
+</div>
+<div class="col-12">
+  <div class="form-floating mb-3">
+    <textarea class="form-control" placeholder="Description" id="description" name="description"
+      style="height: 200px">{{this.description}}</textarea>
+    <label for="description">Description</label>
+  </div>
+</div>
+<div class="col-12">
+  <div class="form-floating mb-3">
+    <h3>Upload Photo</h3>
+    <input type="file" name="picture" accept="" enctype="multipart/form-data" />
+    {{!-- <textarea class="form-control" placeholder="Leave a comment here" id="picture" name="picture"
+      style="height: 200px">{{this.picture}}</textarea> --}}
+  </div>
+</div>
+<div class="col-12 d-grid">
+  <button class="btn btn-primary" type="submit">Submit</button>
+</div>

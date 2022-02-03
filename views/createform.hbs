@@ -1,0 +1,21 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Users View</a></li>
+    <li class="breadcrumb-item active" aria-current="page">New User</li>
+  </ol>
+</nav>
+
+{{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+<form class="row g-3 needs-validation" method="POST" action="/createformuser" novalidate>
+  {{> user-formu}}
+ 
+</form>
+ <form class="" method="POST" action="/usersview">
+    <button style="margin-top: 5px; width: 100%;" class="btn btn-primary" align="center" type="submit">Back</button>
+  </form>

@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/css/registration.css">
+
+<form class="" method="POST" action="/addreg">
+  <div class="main">
+
+    <p class="sign" align="center">Register User</p>
+    <form class="form1" >
+      <input class="un " name="name" type="text" align="center" placeholder="Name" required>
+      <input class="un " name="surname" type="text" align="center" placeholder="Surname" required>
+      <input class="un " name="email" type="email" align="center" placeholder="Email" required>
+
+      <select name="role" id="role" class="un ">
+        <option value="user">User</option>
+      </select>
+
+      <input class="pass" name="password" type="password" align="center" placeholder="Password" required>
+
+      {{!--<a class="submit" type="submit" align="center">Create</a>
+       <button class="btn btn-primary" type="submit">Submit</button> --}}
+       <button class="submit" align="center" type="submit">Submit</button>
+    </form>
+
+  </div>
+</form>

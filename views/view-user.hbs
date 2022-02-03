@@ -1,0 +1,61 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/login">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View User</li>
+  </ol>
+</nav>
+
+<div class="view-user p-5">
+  {{#each rows}}
+  <div class="row mb-5">
+    <div class="col text-center">
+      <h3></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">category</th>
+            <th scope="col">price</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{this.name}}</th>
+            <td>{{this.category}}</td>
+            <td>{{this.price}}</td>
+         
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <div class="col">
+        <b>description</b>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        {{this.description}}
+      </div>
+          <div class="row">
+      <div class="col">
+        <b>picture</b>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+         {{#if this.picture}}
+        <img class="card__image" src="data:image/png;base64,{{this.picture}}" loading="lazy" alt="Embedded Image">
+        {{else}}
+        <img class="card__image" src="/img/default.jpg" loading="lazy" alt="User Profile">
+        {{/if}}
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
